@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Full Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <style>
+                .custom-dropdown {
+                    min-width: 400px;
+                    left: 100% !important;
+                    transform: translateX(-100%) !important;
+                    border-radius: 10px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+                    background-color: #ffffff;
+                }
+            
+                .custom-dropdown .dropdown-item:hover {
+                    background-color: #f0f4ff;
+                    border-radius: 6px;
+                }
+            
+                .dropdown-header {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }        </style>
+</head>
+
+<body>
+
+    <!-- ✅ NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top  bg-success">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="#">Omar Salem</a>
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible menu -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2 w-80 "  type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <li class="nav-item dropdown">
+                    <a class="btn btn-outline-light me-3 pe-3 dropdown-toggle  text-white align-items-center  ms-3  " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown">
+                        Services
+                    </a>
+                
+                    <div class="dropdown-menu custom-dropdown p-3">
+                        <h6 class="dropdown-header text-primary">Our Services</h6>
+                        <div class="row gx-4 gy-2">
+                            <div class="col-6">
+                                <a class="dropdown-item d-flex align-items-start gap-2 py-2 px-2" href="#">
+                                    <i class="bi bi-laptop text-primary"></i>
+                                    <div>
+                                        <strong>Web Design</strong><br>
+                                        <small class="text-muted">Modern and responsive</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="dropdown-item d-flex align-items-start gap-2 py-2 px-2" href="#">
+                                    <i class="bi bi-rocket text-success"></i>
+                                    <div>
+                                        <strong>SEO</strong><br>
+                                        <small class="text-muted">Rank higher in search</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="dropdown-item d-flex align-items-start gap-2 py-2 px-2" href="#">
+                                    <i class="bi bi-cloud text-info"></i>
+                                    <div>
+                                        <strong>Hosting</strong><br>
+                                        <small class="text-muted">Fast & secure servers</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="dropdown-item d-flex align-items-start gap-2 py-2 px-2" href="#">
+                                    <i class="bi bi-shield-check text-warning"></i>
+                                    <div>
+                                        <strong>Security</strong><br>
+                                        <small class="text-muted">Protect your data</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>             </li>
+                  
+            </div>
+        </div></nav>
+
+    <!-- ✅ SIDEBAR + MAIN CONTENT -->
+    <div class="container-fluid mt-5 p-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-12 col-md-3 bg-light p-3">
+                <h5>Sidebar Menu</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            
+            <div class="col-12 col-md-9 p-3">
+                <h2>Welcome</h2>
+                <p>This is the main content area. You can write anything here, add images, text, cards, or anything else
+                    using Bootstrap components.</p>
+                    
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                    
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="images/video5.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
+                                    <i class="bi bi-laptop fs-1 text-primary"></i>
+                                    <h5 class="card-title mt-3">Web Design</h5>
+                                    <p class="card-text">Create beautiful, responsive websites with modern layouts.</p>
+                                    <a href="#" class="btn btn-outline-success btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="images/video3.jpeg" alt="video4" class=" img-thumbnail rounded  mb-3">
+                                    <i class="bi bi-bar-chart-line fs-1 text-success"></i>
+                                    <h5 class="card-title mt-3">SEO Optimization</h5>
+                                    <p class="card-text">Improve your visibility in search engines and grow traffic.</p>
+                                    <a href="#" class="btn btn-outline-success btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="images/video3.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
+                                    <i class="bi bi-laptop fs-1 text-primary"></i>
+                                    <h5 class="card-title mt-3">Web Design</h5>
+                                    <p class="card-text">Create beautiful, responsive websites with modern layouts.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="images/video1.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
+                                    <i class="bi bi-laptop fs-1 text-primary"></i>
+                                    <h5 class="card-title mt-3">Web Design</h5>
+                                    <p class="card-text">Create beautiful, responsive websites with modern layouts.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="images/video2.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
+                                    <i class="bi bi-laptop fs-1 text-primary"></i>
+                                    <h5 class="card-title mt-3">Web Design</h5>
+                                    <p class="card-text">Create beautiful, responsive websites with modern layouts.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 6 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-lg ">
+                                <div class="card-body text-center">
+                                    <img src="images/video5.jpeg" alt="video9" class=" img-thumbnail rounded  mb-3">
+                                    <i class="bi bi-cloud fs-1 text-info"></i>
+                                    <h5 class="card-title mt-3">Cloud Hosting</h5>
+                                    <p class="card-text">Fast, secure and scalable cloud hosting solutions.</p>
+                                    <a href="#" class="btn btn-outline-info btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <!-- Horizontal Card 2 Using Bootstrap (Responsive) -->                          
+                        <div class="col-12 col-md-9 p-3">
+                    <!-- Horizontal Card Using Bootstrap (Responsive) -->
+                    
+                    <div class="card mb-3  shadow-sm">
+                        <div class="row g-0">
+                    
+                            <!-- Image (left side) -->
+                            <div class="col-md-6 text-center p-3">
+                                <img src="images/video5.jpeg" alt="video9" class=" img-fluid h-100 w-100  rounded  mb-3">
+                            </div>
+                    
+                            <!-- Content (right side) -->
+                            <div class="col-md-6">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">Web Design</h5>
+                                    <p class="card-text">We build modern and responsive websites that look great on all devices.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- Now lets start talk about Forms lets go................... -->
+<div class="container-fluid mt-5 p-5">
+    <div class="card p-4 shadow-lg w-95 justify-content-center ">
+        <h5 class="mb-3">Contact Us</h5>
+        <form>
+            <!-- Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name">
+            </div>
+    
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+    
+            <!-- Message -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..."></textarea>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        </div>
+</div>
+<!-- Another form type with checkbox and radio buttons and dropdown -->
+<div class="container-fluid mt-5 p-5">
+<div class="card p-4 shadow-sm">
+    <h5 class="mb-3">Contact Us</h5>
+
+    <form>
+        <!-- ROW with 2 columns (Full Name & Email) -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+        </div>
+
+        <!-- Radio Buttons (Gender) -->
+        <div class="mb-3">
+            <label class="form-label d-block">Gender</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes (Services) -->
+        <div class="mb-3">
+            <label class="form-label d-block">Services Interested In</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="seo" value="SEO">
+                <label class="form-check-label" for="seo">SEO</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="design" value="Design">
+                <label class="form-check-label" for="design">Design</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="hosting" value="Hosting">
+                <label class="form-check-label" for="hosting">Hosting</label>
+            </div>
+        </div>
+
+        <!-- Dropdown (Country) -->
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country">
+                <option selected disabled>Choose...</option>
+                <option value="palestine">Palestine</option>
+                <option value="jordan">Jordan</option>
+                <option value="egypt">Egypt</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    </div>
+    </div>
+    <!-- ✅ FOOTER -->
+    <div class="container-fluid bg-dark text-white mt-4 p-3 ">
+        <div class="row "  >
+            <div class="col text-center">
+                <small>© 2025 My Website. All rights reserved.</small>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
