@@ -124,14 +124,14 @@
             
             <div class="col-12 col-md-9 p-3">
                 <h2>Welcome</h2>
-                <p>This is the main content area. You can write anything here, add images, text, cards, or anything else
-                    using Bootstrap components.</p>
+                <p class="lead"><strong>is the main content area. You can write anything here, add images, text, cards, or anything elsusing Bootstrap components.</strong> </p>
+                    
                     
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                     
                         <!-- Card 1 -->
                         <div class="col">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 shadow-sm bg-dark text-light">
                                 <div class="card-body text-center">
                                     <img src="images/video5.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
                                     <i class="bi bi-laptop fs-1 text-primary"></i>
@@ -144,7 +144,7 @@
                     
                         <!-- Card 2 -->
                         <div class="col">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 shadow-sm bg-dark text-light">
                                 <div class="card-body text-center">
                                     <img src="images/video3.jpeg" alt="video4" class=" img-thumbnail rounded  mb-3">
                                     <i class="bi bi-bar-chart-line fs-1 text-success"></i>
@@ -156,7 +156,7 @@
                         </div>
                         <!-- Card 3 -->
                         <div class="col">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 shadow-sm bg-dark text-light">
                                 <div class="card-body text-center">
                                     <img src="images/video3.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
                                     <i class="bi bi-laptop fs-1 text-primary"></i>
@@ -168,7 +168,7 @@
                         </div>
                         <!-- Card 4 -->
                         <div class="col">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 shadow-sm bg-dark text-light">
                                 <div class="card-body text-center">
                                     <img src="images/video1.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
                                     <i class="bi bi-laptop fs-1 text-primary"></i>
@@ -180,7 +180,7 @@
                         </div>
                         <!-- Card 5 -->
                         <div class="col">
-                            <div class="card h-100 shadow-sm">
+                            <div class="card h-100 shadow-sm bg-dark text-light">
                                 <div class="card-body text-center">
                                     <img src="images/video2.jpeg" alt="video1" class=" img-thumbnail rounded  mb-3">
                                     <i class="bi bi-laptop fs-1 text-primary"></i>
@@ -193,7 +193,7 @@
                     
                         <!-- Card 6 -->
                         <div class="col">
-                            <div class="card h-100 shadow-lg ">
+                            <div class="card h-100 shadow-lg bg-dark text-light ">
                                 <div class="card-body text-center">
                                     <img src="images/video5.jpeg" alt="video9" class=" img-thumbnail rounded  mb-3">
                                     <i class="bi bi-cloud fs-1 text-info"></i>
@@ -208,7 +208,7 @@
                         <div class="col-12 col-md-9 p-3">
                     <!-- Horizontal Card Using Bootstrap (Responsive) -->
                     
-                    <div class="card mb-3  shadow-sm">
+                    <div class="card mb-3  shadow-sm bg-dark text-light">
                         <div class="row g-0">
                     
                             <!-- Image (left side) -->
@@ -282,13 +282,12 @@
         <div class="mb-3">
             <label class="form-label d-block">Gender</label>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <input class="form-check-input" type="radio" name="gender" id="male" required>
                 <label class="form-check-label" for="male">Male</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                <label class="form-check-label" for="female">Female</label>
-            </div>
+                <input class="form-check-input" type="radio" name="gender" id="female" required>
+                <label class="form-check-label" for="female">Female</label>        </div>
         </div>
 
         <!-- Checkboxes (Services) -->
@@ -361,7 +360,7 @@
             </div>
         
             <!-- This is hidden by default -->
-            <div class="invalid-feedback" id="gender-error">
+            <div class="invalid-feedback d-none" id="gender-error">
                 Please select your gender.
             </div>    </div>
           <!-- Checkboxes: Services -->
@@ -397,7 +396,212 @@
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
-    <!-- ✅ FOOTER -->
+      <hr>
+      <!-- Form with more options such as image upload and date picker and time picker............................ -->
+    <div class="container-fluid mt-5">
+        <div class="card shadow-lg p-4">
+            <h4 class="mb-4 text-primary">📋 Contact Us</h4>
+    
+            <form class="needs-validation" novalidate>
+    
+                <!-- Name and Email -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                </div>
+    
+                <!-- Gender -->
+                <div class="mb-3">
+                    <label class="form-label d-block">Gender</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" required>
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                    <div class="invalid-feedback d-none" id="gender-error">
+                        Please select your gender.
+                    </div>
+                </div>
+    
+                <!-- Services (checkboxes) -->
+                <div class="mb-3">
+                    <label class="form-label d-block">Services Interested In</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input service" type="checkbox" id="service1">
+                        <label class="form-check-label" for="service1">Web Design</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input service" type="checkbox" id="service2">
+                        <label class="form-check-label" for="service2">SEO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input service" type="checkbox" id="service3">
+                        <label class="form-check-label" for="service3">Hosting</label>
+                    </div>
+                    <div class="invalid-feedback d-none" id="services-error">
+                        Please select at least one service.
+                    </div>
+                </div>
+    
+                <!-- Country Dropdown -->
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option value="palestine">Palestine</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="egypt">Egypt</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose your country.</div>
+                </div>
+    
+                <!-- Date & Time -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="date" class="form-label">Appointment Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                        <div class="invalid-feedback">Please select a date.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="time" class="form-label">Preferred Time</label>
+                        <input type="time" class="form-control" id="time" required>
+                        <div class="invalid-feedback">Please select a time.</div>
+                    </div>
+                </div>
+    
+                <!-- Message -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <div class="invalid-feedback">Message is required.</div>
+                </div>
+    
+                <!-- File Upload -->
+                <div class="mb-3">
+                    <label for="file" class="form-label">Upload File (Optional)</label>
+                    <input class="form-control" type="file" id="file" required>
+                </div>
+    
+                <!-- Terms -->
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+    
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- now lets go to the Modals...................................................... -->
+
+    <button type="button" class="btn btn-warning mt-5 w-100" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open Modal
+    </button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Hello Baby</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <!-- Body -->
+                <div class="modal-body">
+                    This is the modal body content.
+                </div>
+    
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- now we will make modal more stylish and has login page and wider and more options ........................................ -->
+      <!-- for the button that will open the modal -->
+    <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#customModal">
+        Launch Form Modal
+      </button>
+      <!-- for the modal itself -->
+    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered"> <!-- Size + Centered -->
+            <div class="modal-content">
+    
+                <!-- 🔷 Header with custom color -->
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="modalTitle">📝 Contact Form</h5>
+                    <button type="button" class="btn-close bg-dark" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" border="5" height="16" fill="currentColor" style="background-color: #000;" class="bi bi-x-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />                    </svg>
+                    </button>
+                        
+                </div>
+    
+                <!-- 🔸 Body: Form content -->
+                <div class="modal-body">
+                    <form id="modalForm" class="needs-validation" novalidate>
+    
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                            <div class="invalid-feedback">Name is required.</div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" id="email" class="form-control" required>
+                            <div class="invalid-feedback">Valid email is required.</div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" rows="4" required></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+                        <!-- File Upload -->
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Upload File (Optional)</label>
+                            <input class="form-control" type="file" id="file" required>
+                        </div>
+    
+                    </form>
+                </div>
+    
+                <!-- 🔻 Footer: with custom buttons -->
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">❌ Cancel</button>
+                    <button type="submit" form="modalForm" class="btn btn-success">✅ Send Message</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+      
+      
+      <!-- ✅ FOOTER -->
     <div class="container-fluid bg-dark text-white mt-4 p-3 ">
         <div class="row "  >
             <div class="col text-center">
@@ -413,28 +617,35 @@
 
             Array.from(forms).forEach(function (form) {
                 const genderRadios = form.querySelectorAll('input[name="gender"]');
-                const genderError = form.querySelector('#gender-error');
+                const genderError = document.getElementById('gender-error');
+
+                const serviceCheckboxes = form.querySelectorAll('.service');
+                const servicesError = document.getElementById('services-error');
 
                 form.addEventListener('submit', function (event) {
-                    let genderChecked = false;
+                    const genderChecked = Array.from(genderRadios).some(r => r.checked);
+                    const serviceChecked = Array.from(serviceCheckboxes).some(c => c.checked);
 
-                    // Check if any gender option is selected
-                    genderRadios.forEach(radio => {
-                        if (radio.checked) {
-                            genderChecked = true;
-                        }
-                    });
-
-                    // Show or hide error
+                    // Show gender error if not selected
                     if (!genderChecked) {
-                        genderError.style.display = 'block';
-                        event.preventDefault();
-                        event.stopPropagation();
+                        genderError.classList.remove('d-none');
+                        genderError.classList.add('d-block');
                     } else {
-                        genderError.style.display = 'none';
+                        genderError.classList.add('d-none');
+                        genderError.classList.remove('d-block');
                     }
 
-                    if (!form.checkValidity() || !genderChecked) {
+                    // Show services error if none selected
+                    if (!serviceChecked) {
+                        servicesError.classList.remove('d-none');
+                        servicesError.classList.add('d-block');
+                    } else {
+                        servicesError.classList.add('d-none');
+                        servicesError.classList.remove('d-block');
+                    }
+
+                    // Stop if any invalid
+                    if (!form.checkValidity() || !genderChecked || !serviceChecked) {
                         event.preventDefault();
                         event.stopPropagation();
                     }
@@ -442,15 +653,31 @@
                     form.classList.add('was-validated');
                 });
 
-                // Hide error as soon as the user selects a gender
-                genderRadios.forEach(radio => {
-                    radio.addEventListener('change', () => {
-                        genderError.style.display = 'none';
+                // Auto-hide gender error when radio changes
+                genderRadios.forEach(r => {
+                    r.addEventListener('change', () => {
+                        if (Array.from(genderRadios).some(r => r.checked)) {
+                            genderError.classList.add('d-none');
+                            genderError.classList.remove('d-block');
+                        }
+                    });
+                });
+
+                // Auto-hide services error when checkbox changes
+                serviceCheckboxes.forEach(c => {
+                    c.addEventListener('change', () => {
+                        if (Array.from(serviceCheckboxes).some(cb => cb.checked)) {
+                            servicesError.classList.add('d-none');
+                            servicesError.classList.remove('d-block');
+                        }
                     });
                 });
             });
         })();
     </script>
+        
+      
+    
 
 </body>
 
